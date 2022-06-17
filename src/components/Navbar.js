@@ -9,6 +9,7 @@ import { useProductsContext } from "../context/products_context";
 import { useUserContext } from "../context/user_context";
 
 const Nav = () => {
+  const { openSidebar } = useProductsContext();
   return (
     <NavContainer>
       <div className="nav-center">
@@ -16,7 +17,7 @@ const Nav = () => {
           <Link to="/">
             <img src={logo} alt="comfy sloth" />
           </Link>
-          <button type="button" className="nav-toggle">
+          <button type="button" className="nav-toggle" onClick={openSidebar}>
             <FaBars />
           </button>
         </div>
@@ -30,6 +31,7 @@ const Nav = () => {
             );
           })}
         </ul>
+        <CartButtons />
       </div>
     </NavContainer>
   );
@@ -58,7 +60,7 @@ const NavContainer = styled.nav`
   .nav-toggle {
     background: transparent;
     border: transparent;
-    color: var(--clr-primary-5);
+    color: var(--pal-4);
     cursor: pointer;
     svg {
       font-size: 2rem;
@@ -92,7 +94,7 @@ const NavContainer = styled.nav`
         letter-spacing: var(--spacing);
         padding: 0.5rem;
         &:hover {
-          border-bottom: 2px solid var(--clr-primary-7);
+          border-bottom: 2px solid var(--pal-4);
         }
       }
     }
