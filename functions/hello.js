@@ -3,10 +3,9 @@ const items = [
   { id: 1, name: "john" },
   { id: 2, name: "susan" },
 ];
-
-exports.handler = async function (event, content) {
+exports.handler = async function (event, context) {
   return {
     statusCode: 200,
-    body: "Hello World",
+    body: "hello world",
   };
 };

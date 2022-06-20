@@ -44,7 +44,6 @@ const SingleProductPage = () => {
   if (error) {
     return <Error />;
   }
-
   const {
     name,
     price,
@@ -63,23 +62,23 @@ const SingleProductPage = () => {
         <Link to="/products" className="btn">
           back to products
         </Link>
-        <div className="product-center">
+        <div className=" product-center">
           <ProductImages images={images} />
           <section className="content">
             <h2>{name}</h2>
             <Stars stars={stars} reviews={reviews} />
-            <h5 className="price">{formatPrice(price)}</h5>
-            <p className="desc">{description}</p>
+            <h5 className="price"> {formatPrice(price)}</h5>
+            <p className="desc"> {description}</p>
             <p className="info">
-              <span>Avilable :</span>
-              {stock > 0 ? "In Stock" : "Out of Stock"}
+              <span>Available : </span>
+              {stock > 0 ? "In stock" : "out of stock"}
             </p>
             <p className="info">
-              <span>SKU :</span>
+              <span>SKU : </span>
               {sku}
             </p>
             <p className="info">
-              <span>Brand :</span>
+              <span>Brand : </span>
               {company}
             </p>
             <hr />
