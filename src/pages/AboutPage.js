@@ -15,12 +15,14 @@ const AboutPage = () => {
             <div className="underline"></div>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-            aperiam fugiat libero molestiae sed neque nostrum unde aut aliquam
-            sint exercitationem cum harum recusandae, rem autem minus! Incidunt
-            qui vel tenetur nemo voluptatem rerum maiores obcaecati sunt iste
-            cumque! Dolor eius maxime repellat itaque sapiente neque excepturi
-            vel laboriosam delectus!
+            Decor Vibe is synonymous to well-made furniture that brings alive
+            the aesthetics of your home, giving it an elegant look and a
+            luxurious feel. We aim to make a difference in the way people shop
+            for their furniture and home decor needs. We believe choosing
+            furniture should be easy to acquire and pleasant to look at. This
+            approach helps us stay unique in the industry. All our products
+            provide top-notch quality and aesthetics with the customer reviews
+            backing it up.
           </p>
         </article>
       </Wrapper>
